@@ -1,0 +1,15 @@
+params:
+  cuda_devices: []
+
+optional_plugin_components: {}
+
+shard_descriptor:
+  template: MultiINPUT_shard_descriptor.MultiINPUTShardDescriptor
+  params:
+    rank_worldsize: 1, 1
+    adni_num: 1
+    data_dir: /home/user1/fast_storage/a1
+    img_dir: ADNI1_ALL_T1
+    csv_path: /home/user1/fast_storage/ADNI_csv
+    csv_filename: ADNI_ready.csv
+    data_seed: 11
